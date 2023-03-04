@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The GrangeMobile App</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="theme-color" content="#31d53d" />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <capacitor-welcome></capacitor-welcome>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <b> G</b>range<b>M</b>obile</a>
+          <button
+            title="navbar"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">
+                  <i class="fa fa-home-alt"></i> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="search.html">
+                  <i class="fa fa-search"></i> Search</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schedule.html">
+                  <i class="fa fa-calendar-alt"></i> Schedule</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="classroom.html">
+                  <i class="fa fa-message"></i> Classroom</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.tudublin.ie/">
+                  <i class="fa fa-school"></i> TUD Home (Web)</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.tudublin.ie/for-staff/">
+                  <i class="fa fa-briefcase"></i> TUD Staff Resources (Web)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- welcome message -->
+      <div class="container">
+        <div class="row bg-primary-subtle p-3">
+          <div class="col">
+            <h1 class="text-left">Welcome to GrangeMobile</h1>
+            <p class="text-left">
+              GrangeMobile is a mobile app for students and staff of The
+              Technological University, Dublin.
+            </p>
+
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              data-bs-toggle="collapse"
+              data-bs-target="#read-more"
+            >
+              Read More <i class="fa fa-caret-down"></i>
+            </button>
+            <div id="read-more" class="collapse">
+              It is designed to provide a quick and easy way to access
+              information about the university, such as timetables, courses,
+              modules, and allows lecturers to access their classrooms to
+              contact their students.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- carousel images -->
+      <div class="container">
+        <div class="row bg-primary-subtle">
+          <div class="col">
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="2"
+                ></button>
+              </div>
+
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/imgs/home1.jpg"
+                    alt="TU Dublin"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/imgs/home2.jpg"
+                    alt="TU Dublin"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/imgs/home3.jpg"
+                    alt="TU Dublin"
+                    class="d-block w-100"
+                  />
+                </div>
+              </div>
+
+              <!-- Left and right controls/icons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- features -->
+      <div class="container">
+        <div class="row bg-primary-subtle p-3">
+          <div class="col">
+            <h1 class="text-left mt-3">Features</h1>
+            <p class="text-left">
+              GrangeMobile has a number of features to help you get the most out
+              of your time at TU Dublin.
+            </p>
+
+            <!-- search feature card -->
+            <div class="card my-3">
+              <img
+                class="card-img-top"
+                src="assets/imgs/home-search.jpg"
+                alt="Card image"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Search Modules</h4>
+                <p class="card-text">
+                  Search for courses and modules from the university catalogue.
+                  View their details and add them to your timetable.
+                </p>
+                <a href="search.html" class="btn btn-primary">Search Modules</a>
+              </div>
+            </div>
+
+            <!-- schedule feature card -->
+            <div class="card my-3">
+              <img
+                class="card-img-top"
+                src="assets/imgs/home-schedule.jpg"
+                alt="Card image"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Schedule Your TimeTable</h4>
+                <p class="card-text">
+                  View your daily, weekly and monthly timetable and upcoming
+                  classes. View the location of your classes and their timings.
+                </p>
+                <a href="schedule.html" class="btn btn-primary"
+                  >Schedule TimeTable</a
+                >
+              </div>
+            </div>
+
+            <!-- classroom feature card -->
+            <div class="card my-3">
+              <img
+                class="card-img-top"
+                src="assets/imgs/home-classroom.jpg"
+                alt="Card image"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Access Your Classroom</h4>
+                <p class="card-text">
+                  View your classroom and contact your students. You can also
+                  view the location of your classroom. You can send a group
+                  e-email to their college email address.
+                </p>
+                <a href="classroom.html" class="btn btn-primary"
+                  >Enter Classroom</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row bg-primary-subtle py-5"></div>
+      </div>
+    </main>
+
+    <!-- bottom navigation -->
+    <footer>
+      <nav class="navbar fixed-bottom bg-dark-subtle">
+        <div class="container-fluid justify-content-center">
+          <ul class="navbar-nav d-flex flex-row gap-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                ><i class="fa fa-home-alt d-flex justify-content-center"></i>
+                Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link inactive"
+                aria-current="page"
+                href="search.html"
+                ><i class="fa fa-search d-flex justify-content-center"></i>
+                Search</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link inactive"
+                aria-current="page"
+                href="schedule.html"
+                ><i
+                  class="fa fa-calendar-alt d-flex justify-content-center"
+                ></i>
+                Schedule</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link inactive"
+                aria-current="page"
+                href="classroom.html"
+                ><i class="fa fa-message d-flex justify-content-center"></i>
+                Classroom</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="./js/capacitor-welcome.js" type="module"></script>
+
+    <!-- jQuery CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Bootstrap CDN script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

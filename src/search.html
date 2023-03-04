@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <b> G</b>range<b>M</b>obile</a
+          >
+          <button
+            title="navbar"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fa fa-home-alt"></i> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="search.html">
+                  <i class="fa fa-search"></i> Search</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schedule.html">
+                  <i class="fa fa-calendar-alt"></i> Schedule</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="classroom.html">
+                  <i class="fa fa-message"></i> Classroom</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.tudublin.ie/">
+                  <i class="fa fa-school"></i> TUD Home (Web)</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.tudublin.ie/for-staff/">
+                  <i class="fa fa-briefcase"></i> TUD Staff Resources (Web)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row bg-primary-subtle p-3">
+          <div class="col">
+            <h1 class="text-left">Search Courses</h1>
+            <p class="text-left">
+              Search for courses and modules from the university catalogue. View
+              their details and add them to your schedule.
+            </p>
+          </div>
+          <form class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Search" />
+            <button class="btn btn-primary" type="button">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card my-4">
+          <div class="card-body">
+            <h4 class="card-title my-2">Creative Digital Media & UX</h4>
+            <h6 class="card-subtitle my-2">TU 294</h6>
+            <p class="card-text my-2">
+              Postgraduate | Master of Science | 1.5 Years | Full Time | Level 9
+              | Grangegorman
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+            >
+              View Courses
+            </button>
+          </div>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Course List</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <h6 class="my-1">TU 294</h6>
+                <h3 class="mb-3">Creative Digital Media and UX</h3>
+                <!-- Accordion with list of courses  -->
+                <div class="accordion my-2" id="accordionCourses">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Social Media Applications
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionCourses"
+                    >
+                      <div class="accordion-body">
+                        <ul class="list-group">
+                          <li class="list-group-item">ID: <b>MED9027</b></li>
+                          <li class="list-group-item">
+                            Semester: <b>2021-22</b>
+                          </li>
+                          <li class="list-group-item">
+                            Start Date: <b>September 1, 2021</b>
+                          </li>
+                          <li class="list-group-item">
+                            End Date: <b>August 31, 2022</b>
+                          </li>
+                          <li class="list-group-item">
+                            Lecturer: <b>Dr. Keith Gardiner</b>
+                          </li>
+                        </ul>
+                        <a
+                          class="btn btn-success btn-sm my-2"
+                          href="#"
+                          role="button"
+                        >
+                          Add to Schedule
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        User Interaction Design
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionCourses"
+                    >
+                      <div class="accordion-body">
+                        <ul class="list-group">
+                          <li class="list-group-item">ID: <b>MED9027</b></li>
+                          <li class="list-group-item">
+                            Semester: <b>2021-22</b>
+                          </li>
+                          <li class="list-group-item">
+                            Start Date: <b>September 1, 2021</b>
+                          </li>
+                          <li class="list-group-item">
+                            End Date: <b>August 31, 2022</b>
+                          </li>
+                          <li class="list-group-item">
+                            Lecturer: <b>Dr. Keith Gardiner</b>
+                          </li>
+                        </ul>
+                        <a
+                          class="btn btn-success btn-sm my-2"
+                          href="#"
+                          role="button"
+                        >
+                          Add to Schedule
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Project Develop and UX Treatment
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#accordionCourses"
+                    >
+                      <div class="accordion-body">
+                        <ul class="list-group">
+                          <li class="list-group-item">ID: <b>MED9027</b></li>
+                          <li class="list-group-item">
+                            Semester: <b>2021-22</b>
+                          </li>
+                          <li class="list-group-item">
+                            Start Date: <b>September 1, 2021</b>
+                          </li>
+                          <li class="list-group-item">
+                            End Date: <b>August 31, 2022</b>
+                          </li>
+                          <li class="list-group-item">
+                            Lecturer: <b>Dr. Keith Gardiner</b>
+                          </li>
+                        </ul>
+                        <a
+                          class="btn btn-success btn-sm my-2"
+                          href="#"
+                          role="button"
+                        >
+                          Add to Schedule
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <nav class="navbar fixed-bottom bg-dark-subtle">
+        <div class="container-fluid justify-content-center">
+          <ul class="navbar-nav d-flex flex-row gap-5">
+            <li class="nav-item">
+              <a class="nav-link inactive" aria-current="page" href="index.html"
+                ><i class="fa fa-home-alt d-flex justify-content-center"></i>
+                Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="search.html"
+                ><i class="fa fa-search d-flex justify-content-center"></i>
+                Search</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link inactive"
+                aria-current="page"
+                href="schedule.html"
+                ><i
+                  class="fa fa-calendar-alt d-flex justify-content-center"
+                ></i>
+                Schedule</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link inactive"
+                aria-current="page"
+                href="classroom.html"
+                ><i class="fa fa-message d-flex justify-content-center"></i>
+                Classroom</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <!-- jQuery CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Bootstrap CDN script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

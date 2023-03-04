@@ -1,0 +1,18 @@
+{
+    "courseList": [
+        {
+            "id": 1,
+            "courseId": "TU 294",
+            "courseName": "Creative Digital Media and UX",
+            "courseStage": "Postgraduate",
+            "courseLevel": "Level 9",
+            "courseDuration": "1.5 year",
+            "courseType": "Full-time",
+            "courseLocation": "Grangegorman"
+        },
+        {
+
+
+        }
+    ]
+}
