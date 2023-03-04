@@ -75,6 +75,183 @@
         </div>
       </nav>
     </header>
+    <main>
+      <!-- Introductory Text -->
+      <div class="container">
+        <div class="row bg-primary-subtle p-3">
+          <div class="col">
+            <h6 class="text-left">Hi, Professor</h6>
+            <h1 class="text-left">Your Schedule</h1>
+            <p class="text-left">
+              Here you can see your schedule for the current semester. You can
+              switch between daily, weekly, monthly, and list views.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toggle-able Tabs for different schedule views -->
+
+      <!-- Nav tabs -->
+      <ul
+        class="nav mt-3 nav-tabs pt-1 px-3 justify-content-between"
+        role="tablist"
+      >
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="tab" href="#daily"
+            >Daily</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#weekly">Weekly</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#monthly">Monthly</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#agenda">Agenda</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- Daily View -->
+        <div id="daily" class="container tab-pane active">
+          <br />
+
+          <!-- Days Pill Navigation -->
+          <div class="container">
+            <!-- Nav pills -->
+            <ul class="nav nav-pills bg-light justify-content-between">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="pill" href="#monday"
+                  >Mon</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#tuesday"
+                  >Tue</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#wednesday"
+                  >Wed</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#thursday"
+                  >Thu</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="pill" href="#friday">Fri</a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane container active mt-3" id="monday">
+                <div class="row shadow-sm pt-2 my-3">
+                  <div class="col-2">
+                    <h6>9:00</h6>
+                  </div>
+                  <div class="col-10">
+                    <h6>Introduction to Web Development</h6>
+                    <p> <i class="fa fa-location-dot me-1"></i> Room 306 - Grangegorman</p>
+                  </div>
+                </div>
+
+                <div class="row shadow-sm pt-2 my-3">
+                  <div class="col-2">
+                    <h6>10:00</h6>
+                  </div>
+                  <div class="col-10">
+                    <h6>Introduction to Web Development</h6>
+                    <p> <i class="fa fa-location-dot me-1"></i> Room 306 - Grangegorman</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane container fade" id="tuesday">
+                <div class="row shadow-sm pt-2 my-3">
+                  <div class="col-2">
+                    <h6>9:00</h6>
+                  </div>
+                  <div class="col-10">
+                    <h6>Introduction to Web Development</h6>
+                    <p> <i class="fa fa-location-dot me-1"></i> Room 306 - Grangegorman</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane container fade" id="wednesday">
+                <div class="row shadow-sm pt-2 my-3">
+                  <div class="col-2">
+                    <h6>9:00</h6>
+                  </div>
+                  <div class="col-10">
+                    <h6>Introduction to Web Development</h6>
+                    <p> <i class="fa fa-location-dot me-1"></i> Room 306 - Grangegorman</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane container fade" id="thursday">
+                <div class="row shadow-sm pt-2 my-3">
+                  <div class="col-2">
+                    <h6>9:00</h6>
+                  </div>
+                  <div class="col-10">
+                    <h6>Introduction to Web Development</h6>
+                    <p> <i class="fa fa-location-dot me-1"></i> Room 306 - Grangegorman</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane container fade" id="friday">
+                <div class="row shadow-sm pt-2 my-3">
+                  <div class="col-2">
+                    <h6>9:00</h6>
+                  </div>
+                  <div class="col-10">
+                    <h6>Introduction to Web Development</h6>
+                    <p> <i class="fa fa-location-dot me-1"></i> Room 306 - Grangegorman</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Weekly Tab -->
+        <div id="weekly" class="container tab-pane fade">
+          <br />
+          <h3>Weekly</h3>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+        <!-- Monthly Tab -->
+        <div id="monthly" class="container tab-pane fade">
+          <br />
+          <h3>Monthly</h3>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam.
+          </p>
+        </div>
+        <!-- Monthly Tab -->
+        <div id="agenda" class="container tab-pane fade">
+          <br />
+          <h3>Agenda List</h3>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam.
+          </p>
+        </div>
+      </div>
+    </main>
 
     <footer>
       <nav class="navbar fixed-bottom bg-dark-subtle">
@@ -97,7 +274,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active"
+                class="nav-link active text-primary"
                 aria-current="page"
                 href="schedule.html"
                 ><i
