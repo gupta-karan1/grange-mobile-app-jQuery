@@ -75,13 +75,13 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="mb-5 pb-5">
       <!-- Introductory Text -->
       <div class="container">
         <div class="row bg-primary-subtle p-3">
           <div class="col">
             <h6 class="text-left">Hi, Professor</h6>
-            <h1 class="text-left"> Here's Your Schedule</h1>
+            <h1 class="text-left">Here's Your Schedule</h1>
           </div>
         </div>
       </div>
@@ -104,171 +104,314 @@
         <li class="nav-item">
           <a class="nav-link" data-bs-toggle="tab" href="#monthly">Monthly</a>
         </li>
-
       </ul>
 
       <!-- Tab panes for daily, weekly and monthly tabs -->
       <div class="tab-content">
         <!-- Daily View -->
         <div id="daily" class="container tab-pane active">
-          <br>
+          <br />
+          <h6>19th March, 2023</h6>
           <div class="container">
             <div class="row">
-              <div class="col-2 border py-3">
+              <div class="col-3 border pt-3">
                 <p>09:00</p>
-                <hr>
-                <p>10:00</p>
+                <hr />
+                <p>12:00</p>
               </div>
-              <div class="col-10 border text-center py-5">Social Media Application</div>
+              <div class="col-9 border pt-3">
+                <h6>Social Media Application</h6>
+                <p>
+                  Room No. 206 | Grangegorman <br />
+                  TU294 | CDM & UX <br />
+                  3 hours | 20 Students
+                </p>
               </div>
-
             </div>
           </div>
         </div>
 
         <!-- Weekly Tab -->
         <div id="weekly" class="container tab-pane fade">
-
           <br />
+          <h6>6th March'23 - 10th March'23</h6>
           <!-- Days Pill Navigation -->
-          <div class="container">
-            <!-- Nav pills -->
-            <ul class="nav nav-pills bg-light justify-content-between">
-              <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="pill" href="#monday"
-                  >Mon</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="pill" href="#tuesday"
-                  >Tue</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="pill" href="#wednesday"
-                  >Wed</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="pill" href="#thursday"
-                  >Thu</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="pill" href="#friday">Fri</a>
-              </li>
-            </ul>
 
-            <!-- Tab panes -->
-            <div class="tab-content">
-              <div class="tab-pane container active mt-3" id="monday">
-                <div class="row shadow-sm pt-2 my-3">
-                  <div class="col-2">
-                    <h6>9:00</h6>
-                  </div>
-                  <div class="col-10">
-                    <h6>Introduction to Web Development</h6>
-                    <p>
-                      <i class="fa fa-location-dot me-1"></i> Room 306 -
-                      Grangegorman
-                    </p>
-                  </div>
+          <!-- Nav pills -->
+          <ul class="nav nav-pills bg-light justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="pill" href="#monday"
+                >Mon</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#tuesday">Tue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#wednesday"
+                >Wed</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#thursday">Thu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#friday">Fri</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane container active mt-3" id="monday">
+              <div class="row shadow-sm pt-2 my-3">
+                <div class="col-2">
+                  <h6>9:00</h6>
                 </div>
-              </div>
-
-              <div class="tab-pane container fade" id="tuesday">
-                <div class="row shadow-sm pt-2 my-3">
-                  <div class="col-2">
-                    <h6>9:00</h6>
-                  </div>
-                  <div class="col-10">
-                    <h6>Introduction to Web Development</h6>
-                    <p>
-                      <i class="fa fa-location-dot me-1"></i> Room 306 -
-                      Grangegorman
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane container fade" id="wednesday">
-                <div class="row shadow-sm pt-2 my-3">
-                  <div class="col-2">
-                    <h6>9:00</h6>
-                  </div>
-                  <div class="col-10">
-                    <h6>Introduction to Web Development</h6>
-                    <p>
-                      <i class="fa fa-location-dot me-1"></i> Room 306 -
-                      Grangegorman
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane container fade" id="thursday">
-                <div class="row shadow-sm pt-2 my-3">
-                  <div class="col-2">
-                    <h6>9:00</h6>
-                  </div>
-                  <div class="col-10">
-                    <h6>Introduction to Web Development</h6>
-                    <p>
-                      <i class="fa fa-location-dot me-1"></i> Room 306 -
-                      Grangegorman
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-pane container fade" id="friday">
-                <div class="row shadow-sm pt-2 my-3">
-                  <div class="col-2">
-                    <h6>9:00</h6>
-                  </div>
-                  <div class="col-10">
-                    <h6>Introduction to Web Development</h6>
-                    <p>
-                      <i class="fa fa-location-dot me-1"></i> Room 306 -
-                      Grangegorman
-                    </p>
-                  </div>
+                <div class="col-10">
+                  <h6>Introduction to Web Development</h6>
+                  <p>
+                    <i class="fa fa-location-dot me-1"></i> Room 306 -
+                    Grangegorman
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+
+            <div class="tab-pane container fade" id="tuesday">
+              <div class="row shadow-sm pt-2 my-3">
+                <div class="col-2">
+                  <h6>9:00</h6>
+                </div>
+                <div class="col-10">
+                  <h6>Introduction to Web Development</h6>
+                  <p>
+                    <i class="fa fa-location-dot me-1"></i> Room 306 -
+                    Grangegorman
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane container fade" id="wednesday">
+              <div class="row shadow-sm pt-2 my-3">
+                <div class="col-2">
+                  <h6>9:00</h6>
+                </div>
+                <div class="col-10">
+                  <h6>Introduction to Web Development</h6>
+                  <p>
+                    <i class="fa fa-location-dot me-1"></i> Room 306 -
+                    Grangegorman
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane container fade" id="thursday">
+              <div class="row shadow-sm pt-2 my-3">
+                <div class="col-2">
+                  <h6>9:00</h6>
+                </div>
+                <div class="col-10">
+                  <h6>Introduction to Web Development</h6>
+                  <p>
+                    <i class="fa fa-location-dot me-1"></i> Room 306 -
+                    Grangegorman
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane container fade" id="friday">
+              <div class="row shadow-sm pt-2 my-3">
+                <div class="col-2">
+                  <h6>9:00</h6>
+                </div>
+                <div class="col-10">
+                  <h6>Introduction to Web Development</h6>
+                  <p>
+                    <i class="fa fa-location-dot me-1"></i> Room 306 -
+                    Grangegorman
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Monthly Tab -->
         <div id="monthly" class="container tab-pane fade">
           <br />
-          <h4 class="mb-2">2023</h4>
-          <div class="container">
-            <div class="row">
-              <div class="col-4 border p-1"><h6>January</h6></div>
-              <div class="col-4 border p-1"><h6>February</h6></div>
-              <div class="col-4 border p-1"><h6>March</h6></div>
+          <h6>March, 2023</h6>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  Week 1
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingOne"
+              >
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Social Media Applications
+                      <span class="badge bg-primary rounded-pill">2</span>
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Authoring Principles
+                      <span class="badge bg-primary rounded-pill">3</span>
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      Computer Science
+                      <span class="badge bg-primary rounded-pill">4</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="row">
-              <div class="col-4 border p-1"><h6>April</h6></div>
-              <div class="col-4 border p-1"><h6>May</h6></div>
-              <div class="col-4 border p-1"><h6>June</h6></div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Week 2
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo"
+              >
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
             </div>
-            <div class="row">
-              <div class="col-4 border p-1"><h6>July</h6></div>
-              <div class="col-4 border p-1"><h6>August</h6></div>
-              <div class="col-4 border p-1"><h6>September</h6></div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Week 3
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
             </div>
-            <div class="row">
-              <div class="col-4 border p-1"><h6>October</h6></div>
-              <div class="col-4 border p-1"><h6>November</h6></div>
-              <div class="col-4 border p-1"><h6>December</h6></div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
+                >
+                  Week 4
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingFour"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFive"
+                >
+                  Week 5
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingFive"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-
       </div>
     </main>
 
