@@ -81,11 +81,7 @@
         <div class="row bg-primary-subtle p-3">
           <div class="col">
             <h6 class="text-left">Hi, Professor</h6>
-            <h1 class="text-left">Your Schedule</h1>
-            <p class="text-left">
-              Here you can see your schedule for the current semester. You can
-              switch between daily, weekly, monthly, and list views.
-            </p>
+            <h1 class="text-left"> Here's Your Schedule</h1>
           </div>
         </div>
       </div>
@@ -115,6 +111,24 @@
       <div class="tab-content">
         <!-- Daily View -->
         <div id="daily" class="container tab-pane active">
+          <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-2 border py-3">
+                <p>09:00</p>
+                <hr>
+                <p>10:00</p>
+              </div>
+              <div class="col-10 border text-center py-5">Social Media Application</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Weekly Tab -->
+        <div id="weekly" class="container tab-pane fade">
+
           <br />
           <!-- Days Pill Navigation -->
           <div class="container">
@@ -151,19 +165,6 @@
                 <div class="row shadow-sm pt-2 my-3">
                   <div class="col-2">
                     <h6>9:00</h6>
-                  </div>
-                  <div class="col-10">
-                    <h6>Introduction to Web Development</h6>
-                    <p>
-                      <i class="fa fa-location-dot me-1"></i> Room 306 -
-                      Grangegorman
-                    </p>
-                  </div>
-                </div>
-
-                <div class="row shadow-sm pt-2 my-3">
-                  <div class="col-2">
-                    <h6>10:00</h6>
                   </div>
                   <div class="col-10">
                     <h6>Introduction to Web Development</h6>
@@ -236,125 +237,35 @@
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- Weekly Tab -->
-        <div id="weekly" class="container tab-pane fade">
-          <br />
-          <div class="container">
-            <!-- Week 1 -->
-            <div class="row shadow-sm mb-4">
-              <div class="col-3">
-                <h6>Week 1</h6>
-              </div>
-              <div class="col-9">
-                <h6>Social Media Applications</h6>
-                <p>
-                  TU 294 | CDM & UX <br />
-                  Monday | 9:00 - 11:00 <br />
-                  Room 306 | Grangegorman
-                </p>
-                <hr />
-                <h6>Authoring Principles</h6>
-                <p>
-                  TU 295 | CDM & UX <br />
-                  Thursday | 12:00 - 15:00 <br />
-                  Room 301a | Bolton Street
-                </p>
-              </div>
-            </div>
-            <div class="row shadow-sm mb-4">
-              <div class="col-3">
-                <h6>Week 2</h6>
-              </div>
-              <div class="col-9">
-                <h6>Social Media Applications</h6>
-                <p>
-                  TU 294 | CDM & UX <br />
-                  Monday | 9:00 - 11:00 <br />
-                  Room 306 | Grangegorman
-                </p>
-                <hr />
-                <h6>Authoring Principles</h6>
-                <p>
-                  TU 295 | CDM & UX <br />
-                  Thursday | 12:00 - 15:00 <br />
-                  Room 301a | Bolton Street
-                </p>
-              </div>
-            </div>
-            <div class="row shadow-sm mb-4">
-              <div class="col-3">
-                <h6>Week 3</h6>
-              </div>
-              <div class="col-9">
-                <h6>Social Media Applications</h6>
-                <p>
-                  TU 294 | CDM & UX <br />
-                  Monday | 9:00 - 11:00 <br />
-                  Room 306 | Grangegorman
-                </p>
-                <hr />
-                <h6>Authoring Principles</h6>
-                <p>
-                  TU 295 | CDM & UX <br />
-                  Thursday | 12:00 - 15:00 <br />
-                  Room 301a | Bolton Street
-                </p>
-              </div>
-            </div>
-            <div class="row shadow-sm mb-4">
-              <div class="col-3">
-                <h6>Week 4</h6>
-              </div>
-              <div class="col-9">
-                <h6>Social Media Applications</h6>
-                <p>
-                  TU 294 | CDM & UX <br />
-                  Monday | 9:00 - 11:00 <br />
-                  Room 306 | Grangegorman
-                </p>
-                <hr />
-                <h6>Authoring Principles</h6>
-                <p>
-                  TU 295 | CDM & UX <br />
-                  Thursday | 12:00 - 15:00 <br />
-                  Room 301a | Bolton Street
-                </p>
-              </div>
-            </div>
-            <div class="row shadow-sm mb-4">
-              <div class="col-3">
-                <h6>Week 5</h6>
-              </div>
-              <div class="col-9">
-                <h6>Social Media Applications</h6>
-                <p>
-                  TU 294 | CDM & UX <br />
-                  Monday | 9:00 - 11:00 <br />
-                  Room 306 | Grangegorman
-                </p>
-                <hr />
-                <h6>Authoring Principles</h6>
-                <p>
-                  TU 295 | CDM & UX <br />
-                  Thursday | 12:00 - 15:00 <br />
-                  Room 301a | Bolton Street
-                </p>
-              </div>
-            </div>
-            </div>
           </div>
         </div>
 
         <!-- Monthly Tab -->
         <div id="monthly" class="container tab-pane fade">
           <br />
-          <h3>Monthly</h3>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam.
-          </p>
+          <h4 class="mb-2">2023</h4>
+          <div class="container">
+            <div class="row">
+              <div class="col-4 border p-1"><h6>January</h6></div>
+              <div class="col-4 border p-1"><h6>February</h6></div>
+              <div class="col-4 border p-1"><h6>March</h6></div>
+            </div>
+            <div class="row">
+              <div class="col-4 border p-1"><h6>April</h6></div>
+              <div class="col-4 border p-1"><h6>May</h6></div>
+              <div class="col-4 border p-1"><h6>June</h6></div>
+            </div>
+            <div class="row">
+              <div class="col-4 border p-1"><h6>July</h6></div>
+              <div class="col-4 border p-1"><h6>August</h6></div>
+              <div class="col-4 border p-1"><h6>September</h6></div>
+            </div>
+            <div class="row">
+              <div class="col-4 border p-1"><h6>October</h6></div>
+              <div class="col-4 border p-1"><h6>November</h6></div>
+              <div class="col-4 border p-1"><h6>December</h6></div>
+            </div>
+          </div>
         </div>
 
 
@@ -364,7 +275,7 @@
     <footer>
       <nav class="navbar fixed-bottom bg-dark-subtle">
         <div class="container-fluid justify-content-center">
-          <ul class="navbar-nav d-flex flex-row gap-5">
+          <ul class="navbar-nav d-flex flex-row gap-4">
             <li class="nav-item">
               <a class="nav-link inactive" aria-current="page" href="index.html"
                 ><i class="fa fa-home-alt d-flex justify-content-center"></i>
