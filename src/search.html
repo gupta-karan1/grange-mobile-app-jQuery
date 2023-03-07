@@ -23,12 +23,10 @@
     />
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <b> G</b>range<b>M</b>obile</a
-          >
+          <a class="navbar-brand" href="#"> <b> G</b>range<b>M</b>obile</a>
           <button
             title="navbar"
             class="navbar-toggler"
@@ -95,23 +93,8 @@
       </div>
 
       <div class="container">
-        <div class="card my-4">
-          <div class="card-body">
-            <h4 class="card-title my-2">Creative Digital Media & UX</h4>
-            <h6 class="card-subtitle my-2">TU 294</h6>
-            <p class="card-text my-2">
-              Postgraduate | Master of Science | 1.5 Years | Full Time | Level 9
-              | Grangegorman
-            </p>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#myModal"
-            >
-              View Courses
-            </button>
-          </div>
+        <div id="course-cards">
+          <!-- Inserted from Courses JSON File -->
         </div>
         <!-- The Modal -->
         <div class="modal" id="myModal">
@@ -119,7 +102,7 @@
             <div class="modal-content">
               <!-- Modal Header -->
               <div class="modal-header">
-                <h4 class="modal-title">Course List</h4>
+                <h4 class="modal-title">Module List</h4>
                 <button
                   type="button"
                   class="btn-close"
@@ -132,7 +115,7 @@
                 <h6 class="my-1">TU 294</h6>
                 <h3 class="mb-3">Creative Digital Media and UX</h3>
                 <!-- Accordion with list of courses  -->
-                <div class="accordion my-2" id="accordionCourses">
+                <div class="accordion my-2" id="accordionModules">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                       <button
@@ -150,97 +133,7 @@
                       id="collapseOne"
                       class="accordion-collapse collapse show"
                       aria-labelledby="headingOne"
-                      data-bs-parent="#accordionCourses"
-                    >
-                      <div class="accordion-body">
-                        <ul class="list-group">
-                          <li class="list-group-item">ID: <b>MED9027</b></li>
-                          <li class="list-group-item">
-                            Semester: <b>2021-22</b>
-                          </li>
-                          <li class="list-group-item">
-                            Start Date: <b>September 1, 2021</b>
-                          </li>
-                          <li class="list-group-item">
-                            End Date: <b>August 31, 2022</b>
-                          </li>
-                          <li class="list-group-item">
-                            Lecturer: <b>Dr. Keith Gardiner</b>
-                          </li>
-                        </ul>
-                        <a
-                          class="btn btn-success btn-sm my-2"
-                          href="#"
-                          role="button"
-                        >
-                          Add to Schedule
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                        User Interaction Design
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseTwo"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionCourses"
-                    >
-                      <div class="accordion-body">
-                        <ul class="list-group">
-                          <li class="list-group-item">ID: <b>MED9027</b></li>
-                          <li class="list-group-item">
-                            Semester: <b>2021-22</b>
-                          </li>
-                          <li class="list-group-item">
-                            Start Date: <b>September 1, 2021</b>
-                          </li>
-                          <li class="list-group-item">
-                            End Date: <b>August 31, 2022</b>
-                          </li>
-                          <li class="list-group-item">
-                            Lecturer: <b>Dr. Keith Gardiner</b>
-                          </li>
-                        </ul>
-                        <a
-                          class="btn btn-success btn-sm my-2"
-                          href="#"
-                          role="button"
-                        >
-                          Add to Schedule
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                      >
-                        Project Develop and UX Treatment
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
-                      data-bs-parent="#accordionCourses"
+                      data-bs-parent="#accordionModules"
                     >
                       <div class="accordion-body">
                         <ul class="list-group">
@@ -286,9 +179,9 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer id="footer">
       <nav class="navbar fixed-bottom bg-dark-subtle">
-        <div class="container-fluid justify-content-center">
+        <div class="container-fluid justify-content-evenly">
           <ul class="navbar-nav d-flex flex-row gap-4">
             <li class="nav-item">
               <a class="nav-link inactive" aria-current="page" href="index.html"
@@ -298,7 +191,7 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link active text-primary"
+                class="nav-link text-primary active"
                 aria-current="page"
                 href="search.html"
                 ><i class="fa fa-search d-flex justify-content-center"></i>
@@ -343,5 +236,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="script.js" defer></script>
   </body>
 </html>
