@@ -1,13 +1,93 @@
-{
-    "moduleList1": [
+ [
         {
             "id": 1,
             "moduleId": "MED9027",
             "moduleName": "Social Media Applications",
-            "moduleSemester": "2021 - 22",
-            "moduleStart": "September 1, 2021",
-            "moduleEnd": "August 31, 2022",
+            "moduleSemester": "2022 - 23",
+            "moduleStart": "September 1, 2022",
+            "moduleEnd": "August 31, 2023",
             "moduleLecturer": "Dr. Keith Gardiner"
-        }
+        },
+        {
+            "id": 2,
+            "moduleId": "MED9034",
+            "moduleName": "User Interaction Design",
+            "moduleSemester": "2022 - 23",
+            "moduleStart": "September 1, 2022",
+            "moduleEnd": "August 31, 2023",
+            "moduleLecturer": "Dr. Brian Vaughan"
+        },
+        {
+            "id": 3,
+            "moduleId": "MED9032",
+            "moduleName": "Project Develop and UX Treatment",
+            "moduleSemester": "2022 - 23",
+            "moduleStart": "September 1, 2022",
+            "moduleEnd": "August 31, 2023",
+            "moduleLecturer": "Evin"
+        },
+        {
+            "id": 4,
+            "moduleId": "MED9000",
+            "moduleName": "Design Practice",
+            "moduleSemester": "2022 - 23",
+            "moduleStart": "January 1, 2022",
+            "moduleEnd": "August 31, 2023",
+            "moduleLecturer": "Dr. John Doe"
+        },
+        {
+            "id": 4,
+            "moduleId": "MED9055",
+            "moduleName": "VR AR Applications",
+            "moduleSemester": "2022 - 23",
+            "moduleStart": "February 1, 2022",
+            "moduleEnd": "September 31, 2023",
+            "moduleLecturer": "Dr. Mark Field"
+        },
+        {
+            "id": 5,
+            "moduleId": "MED9032",
+            "moduleName": "Project Develop and UX Treatment",
+            "moduleSemester": "2022 - 23",
+            "moduleStart": "September 1, 2022",
+            "moduleEnd": "August 31, 2023",
+            "moduleLecturer": "Evin"
+        },
+        {
+            "id": 3,
+            "moduleId": "MED9032",
+            "moduleName": "Project Develop and UX Treatment",
+            "moduleSemester": "2022 - 23",
+            "moduleStart": "September 1, 2022",
+            "moduleEnd": "August 31, 2023",
+            "moduleLecturer": "Evin"
+        },
+        {
+            "id": 3,
+            "moduleId": "MED9032",
+            "moduleName": "Project Develop and UX Treatment",
+            "moduleSemester": "2022 - 23",
+            "moduleStart": "September 1, 2022",
+            "moduleEnd": "August 31, 2023",
+            "moduleLecturer": "Evin"
+        },
+        {
+            "id": 3,
+            "moduleId": "MED9032",
+            "moduleName": "Project Develop and UX Treatment",
+            "moduleSemester": "2022 - 23",
+            "moduleStart": "September 1, 2022",
+            "moduleEnd": "August 31, 2023",
+            "moduleLecturer": "Evin"
+        },
+        {
+            "id": 3,
+            "moduleId": "MED9032",
+            "moduleName": "Project Develop and UX Treatment",
+            "moduleSemester": "2022 - 23",
+            "moduleStart": "September 1, 2022",
+            "moduleEnd": "August 31, 2023",
+            "moduleLecturer": "Evin"
+        },
+
     ]
-}

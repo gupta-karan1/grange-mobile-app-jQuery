@@ -1,8 +1,7 @@
-{
-    "courseList": [
+[
         {
             "id": 1,
-            "courseId": "TU 294",
+            "courseId": "TU294",
             "courseName": "Creative Digital Media and UX",
             "courseStage": "Postgraduate",
             "courseLevel": "Level 9",
@@ -11,8 +10,94 @@
             "courseLocation": "Grangegorman"
         },
         {
-
-
+            "id": 2,
+            "courseId": "TU910",
+            "courseName": "Accounting",
+            "courseStage": "Undergraduate",
+            "courseLevel": "Level 8",
+            "courseDuration": "4 year",
+            "courseType": "Full-time",
+            "courseLocation": "Aungier Street"
+        },
+        {
+            "id": 3,
+            "courseId": "TU651",
+            "courseName": "Applied Biology",
+            "courseStage": "Undergraduate",
+            "courseLevel": "Level 6",
+            "courseDuration": "2 years",
+            "courseType": "Full-time",
+            "courseLocation": "Tallaght"
+        },
+        {
+            "id": 4,
+            "courseId": "TU252R",
+            "courseName": "Applied Cyber Security",
+            "courseStage": "Postgraduate",
+            "courseLevel": "Level 9",
+            "courseDuration": "2 years",
+            "courseType": "Part-time",
+            "courseLocation": "Blanchardstown"
+        },
+        {
+            "id": 5,
+            "courseId": "TU831",
+            "courseName": "Architectural Technology",
+            "courseStage": "Undergraduate",
+            "courseLevel": "Level 8",
+            "courseDuration": "4 years",
+            "courseType": "Full-time",
+            "courseLocation": "Bolton Street"
+        },
+        {
+            "id": 6,
+            "courseId": "TU290",
+            "courseName": "Art and Environment",
+            "courseStage": "Postgraduate",
+            "courseLevel": "Level 9",
+            "courseDuration": "1 year",
+            "courseType": "Full-time",
+            "courseLocation": "Grangegorman"
+        },
+        {
+            "id": 7,
+            "courseId": "TU701",
+            "courseName": "Automation Engineering",
+            "courseStage": "Undergraduate",
+            "courseLevel": "Level 7",
+            "courseDuration": "3 years",
+            "courseType": "Full-time",
+            "courseLocation": "Bolton Street"
+        },
+        {
+            "id": 8,
+            "courseId": "TU885",
+            "courseName": "Digital Forensics & Cyber Security",
+            "courseStage": "Undergraduate",
+            "courseLevel": "Level 8",
+            "courseDuration": "1 year",
+            "courseType": "Part-time",
+            "courseLocation": "Blanchardstown"
+        },
+        {
+            "id": 9,
+            "courseId": "TU212",
+            "courseName": "Electronic Engineering",
+            "courseStage": "Postgraduate",
+            "courseLevel": "Level 9",
+            "courseDuration": "2 years",
+            "courseType": "Part-time",
+            "courseLocation": "Tallaght"
+        },
+        {
+            "id": 10,
+            "courseId": "TU985",
+            "courseName": "Journalism",
+            "courseStage": "Undergraduate",
+            "courseLevel": "Level 8",
+            "courseDuration": "4 years",
+            "courseType": "Full-time",
+            "courseLocation": "Grangegorman"
         }
+
     ]
-}
