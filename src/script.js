@@ -59,62 +59,72 @@ $(document).ready(function () {
       );
     });
   });
+});
 
-  // AJAX Method in JQUERY to display Module List within each Course Card on Search Page
+$(document).ready(function () {
   $.ajax({
     method: "GET",
     url: "modules.json",
     dataType: "json",
   }).done(function (data) {
-    console.log(data);
-    $.map(data, function (module, i) {
+    // console.log(data);
+    $.map(data, function (modules, i) {
       $("#accordionModules").append(`
-            <div class="accordion-item">
-                    <h2 class="accordion-header" id="${module.id}">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse${module.id}"
-                        aria-expanded="false"
-                        aria-controls="collapse${module.id}"
-                      >
-                      ${module.id}
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseTwo"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="${module.id}"
-                      data-bs-parent="#accordionModules"
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading-${modules.id}">
+                <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse-${modules.id}"
+                    aria-expanded="false"
+                    aria-controls="collapse-${modules.id}"
+                >
+                    ${modules.moduleName}
+                </button>
+            </h2>
+            <div
+            id="collapse-${modules.id}"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-${modules.id}"
+            data-bs-parent="#accordionModules"
+            >
+                <div class="accordion-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">ID: <b>${modules.moduleId}</b></li>
+                        <li class="list-group-item">
+                            Semester: <b>${modules.moduleSemester}</b>
+                        </li>
+                        <li class="list-group-item">
+                            Start Date: <b>${modules.moduleStart}</b>
+                        </li>
+                        <li class="list-group-item">
+                            End Date: <b>${modules.moduleEnd}</b>
+                        </li>
+                        <li class="list-group-item">
+                            Lecturer: <b>${modules.moduleLecturer}</b>
+                        </li>
+                    </ul>
+                    <a
+                    class="btn btn-success btn-sm my-2"
+                    href="#"
+                    id="${modules.moduleID}"
+                    role="button"
                     >
-                      <div class="accordion-body">
-                        <ul class="list-group">
-                          <li class="list-group-item">ID: <b>MED9027</b></li>
-                          <li class="list-group-item">
-                            Semester: <b>2021-22</b>
-                          </li>
-                          <li class="list-group-item">
-                            Start Date: <b>September 1, 2021</b>
-                          </li>
-                          <li class="list-group-item">
-                            End Date: <b>August 31, 2022</b>
-                          </li>
-                          <li class="list-group-item">
-                            Lecturer: <b>Dr. Keith Gardiner</b>
-                          </li>
-                        </ul>
-                        <a
-                          class="btn btn-success btn-sm my-2"
-                          href="#"
-                          role="button"
-                        >
-                          Add to Schedule
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-            `);
+                    Add to Schedule
+                    </a>
+                </div>
+            </div>
+      </div>
+        `);
     });
   });
+});
+
+$(document).ready(function () {
+  $.ajax({
+    method: "GET",
+    url: "schedule.json",
+    dataType: "json",
+  }).done(function (data) {});
 });
