@@ -126,5 +126,26 @@ $(document).ready(function () {
     method: "GET",
     url: "schedule.json",
     dataType: "json",
-  }).done(function (data) {});
+  }).done(function (data) {
+    // console.log(data);
+    $.map(data, function (schedule, i) {
+      $("#daily-container").append(`
+      <div class="row mt-3">
+      <div class="col-3 border pt-3">
+        <p>${schedule.startTime}</p>
+        <hr />
+        <p>${schedule.endTime}</p>
+      </div>
+      <div class="col-9 border pt-3">
+        <h6>${schedule.moduleName}</h6>
+        <p>
+          Room No. ${schedule.moduleRoom} | ${schedule.moduleLocation} <br />
+          ${schedule.courseID} | ${schedule.courseName} <br />
+          ${schedule.moduleDuration} hours | ${schedule.moduleStudents} Students
+        </p>
+      </div>
+    </div>
+      `);
+    });
+  });
 });
