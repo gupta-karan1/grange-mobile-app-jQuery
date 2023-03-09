@@ -1,142 +1,347 @@
-[
-    {
-        "id": 1,
-        "moduleName":"Social Media Applications",
-        "moduleId":"MED9027",
-        "moduleDuration": 2,
-        "moduleRoom": "206",
-        "moduleLocation":"Grangegorman",
-        "moduleDay": "Monday",
-        "startTime":"9:00 AM",
-        "endTime":"11:00 AM",
-        "courseID":"TU294",
-        "courseName":"CDM & UX",
-        "moduleStudents": 20
-    },
-    {
-        "id": 2,
-        "moduleName":"Social Media Applications",
-        "moduleId":"MED9027",
-        "moduleDuration": 2,
-        "moduleRoom": "206",
-        "moduleLocation":"Grangegorman",
-        "moduleDay": "Monday",
-        "startTime":"9:00 AM",
-        "endTime":"11:00 AM",
-        "courseID":"TU294",
-        "courseName":"CDM & UX",
-        "moduleStudents": 20
-    },
-    {
-        "id": 3,
-        "moduleName":"Social Media Applications",
-        "moduleId":"MED9027",
-        "moduleDuration": 2,
-        "moduleRoom": "206",
-        "moduleLocation":"Grangegorman",
-        "moduleDay": "Monday",
-        "startTime":"9:00 AM",
-        "endTime":"11:00 AM",
-        "courseID":"TU294",
-        "courseName":"CDM & UX",
-        "moduleStudents": 20
-    },
-    {
-        "id": 4,
-        "moduleName":"Social Media Applications",
-        "moduleId":"MED9027",
-        "moduleDuration": 2,
-        "moduleRoom": "206",
-        "moduleLocation":"Grangegorman",
-        "moduleDay": "Monday",
-        "startTime":"9:00 AM",
-        "endTime":"11:00 AM",
-        "courseID":"TU294",
-        "courseName":"CDM & UX",
-        "moduleStudents": 20
-    },
-    {
-        "id": 5,
-        "moduleName":"Social Media Applications",
-        "moduleId":"MED9027",
-        "moduleDuration": 2,
-        "moduleRoom": "206",
-        "moduleLocation":"Grangegorman",
-        "moduleDay": "Monday",
-        "startTime":"9:00 AM",
-        "endTime":"11:00 AM",
-        "courseID":"TU294",
-        "courseName":"CDM & UX",
-        "moduleStudents": 20
-    },
-    {
-        "id": 6,
-        "moduleName":"Social Media Applications",
-        "moduleId":"MED9027",
-        "moduleDuration": 2,
-        "moduleRoom": "206",
-        "moduleLocation":"Grangegorman",
-        "moduleDay": "Monday",
-        "startTime":"9:00 AM",
-        "endTime":"11:00 AM",
-        "courseID":"TU294",
-        "courseName":"CDM & UX",
-        "moduleStudents": 20
-    },
-    {
-        "id": 7,
-        "moduleName":"Social Media Applications",
-        "moduleId":"MED9027",
-        "moduleDuration": 2,
-        "moduleRoom": "206",
-        "moduleLocation":"Grangegorman",
-        "moduleDay": "Monday",
-        "startTime":"9:00 AM",
-        "endTime":"11:00 AM",
-        "courseID":"TU294",
-        "courseName":"CDM & UX",
-        "moduleStudents": 20
-    },
-    {
-        "id": 8,
-        "moduleName":"Social Media Applications",
-        "moduleId":"MED9027",
-        "moduleDuration": 2,
-        "moduleRoom": "206",
-        "moduleLocation":"Grangegorman",
-        "moduleDay": "Monday",
-        "startTime":"9:00 AM",
-        "endTime":"11:00 AM",
-        "courseID":"TU294",
-        "courseName":"CDM & UX",
-        "moduleStudents": 20
-    },
-    {
-        "id": 9,
-        "moduleName":"Social Media Applications",
-        "moduleId":"MED9027",
-        "moduleDuration": 2,
-        "moduleRoom": "206",
-        "moduleLocation":"Grangegorman",
-        "moduleDay": "Monday",
-        "startTime":"9:00 AM",
-        "endTime":"11:00 AM",
-        "courseID":"TU294",
-        "courseName":"CDM & UX",
-        "moduleStudents": 20
-    },
-    {
-        "id": 10,
-        "moduleName":"Social Media Applications",
-        "moduleId":"MED9027",
-        "moduleDuration": 2,
-        "moduleRoom": "206",
-        "moduleLocation":"Grangegorman",
-        "moduleDay": "Monday",
-        "startTime":"9:00 AM",
-        "endTime":"11:00 AM",
-        "courseID":"TU294",
-        "courseName":"CDM & UX",
-        "moduleStudents": 20
-    }
-]
+{
+    "daily":[
+        {
+            "id": 1,
+            "moduleName":"Social Media Applications",
+            "moduleId":"MED9027",
+            "moduleRoom": "206",
+            "moduleLocation":"Grangegorman",
+            "startTime":"9:00 AM",
+            "endTime":"11:00 AM",
+            "courseID":"TU294",
+            "courseName":"CDM & UX",
+            "moduleDuration": 2,
+            "moduleStudents": 20
+        },
+        {
+            "id": 1,
+            "moduleName":"Social Media Applications",
+            "moduleId":"MED9027",
+            "moduleRoom": "206",
+            "moduleLocation":"Grangegorman",
+            "startTime":"01:00 PM",
+            "endTime":"03:00 PM",
+            "courseID":"TU294",
+            "courseName":"CDM & UX",
+            "moduleDuration": 2,
+            "moduleStudents": 12
+        },
+        {
+            "id": 1,
+            "moduleName":"Social Media Applications",
+            "moduleId":"MED9027",
+            "moduleRoom": "206",
+            "moduleLocation":"Grangegorman",
+            "startTime":"4:00 PM",
+            "endTime":"5:00 PM",
+            "courseID":"TU294",
+            "courseName":"CDM & UX",
+            "moduleDuration": 1,
+            "moduleStudents": 30
+        }
+    ],
+    "weekly":[
+        {
+            "monday":[
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                },
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                }
+            ]
+        },
+        {
+            "tuesday":[
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                },
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                }
+            ]
+        },
+        {
+            "wednesday": [
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                },
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                }
+            ]
+        },
+        {
+            "thursday":[
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                },
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                }
+            ]
+        },
+        {
+            "friday":[
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                },
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                }
+            ]
+        }
+    ],
+    "monthly":[
+        {
+            "week1":[
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                },
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                }
+            ]
+        },
+        {
+            "week2":[
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                },
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                }
+            ]
+        },
+        {
+            "week3":[
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                },
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                }
+            ]
+        },
+        {
+            "week4":[
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                },
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                }
+            ]
+        },
+        {
+            "week5":[
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                },
+                {
+                    "id": 1,
+                    "moduleName":"Social Media Applications",
+                    "moduleId":"MED9027",
+                    "moduleRoom": "206",
+                    "moduleLocation":"Grangegorman",
+                    "startTime":"4:00 PM",
+                    "endTime":"5:00 PM",
+                    "courseID":"TU294",
+                    "courseName":"CDM & UX",
+                    "moduleDuration": 1,
+                    "moduleStudents": 30
+                }
+            ]
+        }
+    ]
+}

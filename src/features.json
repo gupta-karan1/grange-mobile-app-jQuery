@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "img": "assets/imgs/home-search.jpg",
+        "cardTitle": "Search For Courses & Modules",
+        "cardText":"Search for courses and modules from the university catalogue. View their details and add them to your timetable.",
+        "cardButton": "Search Courses",
+        "cardLink": "search.html"
+    },
+    {
+        "id": "2",
+        "img": "assets/imgs/home-schedule.jpg",
+        "cardTitle": "Schedule Your TimeTable",
+        "cardText":" View your daily, weekly and monthly timetable and upcoming classes. View the location of your classes and their timings.",
+        "cardButton": "Schedule TimeTable",
+        "cardLink": "schedule.html"
+    },
+    {
+        "id": "3",
+        "img": "assets/imgs/home-classroom.jpg",
+        "cardTitle": "Access Your Classroom",
+        "cardText":"View your classroom and contact your students. You can also view the location of your classroom. You can send an e-email to their college email address.",
+        "cardLink": "classroom.html",
+        "cardButton": "Access Classroom"
+    }
+]

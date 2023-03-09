@@ -27,6 +27,31 @@ $(document).ready(function () {
 });
 */
 
+// AJAX Call to display feature cards on Home Page
+$(document).ready(function () {
+  $.getJSON("features.json", function (data) {
+    $.each(data, function (i, feature) {
+      $("#feature-cards").append(`
+      <div class="card my-3">
+        <img
+          class="card-img-top"
+          src="${feature.img}"
+          alt="${feature.cardTitle}"
+        />
+        <div class="card-body">
+          <h4 class="card-title">${feature.cardTitle}</h4>
+          <p class="card-text">
+          ${feature.cardText}
+          </p>
+          <a href="${feature.cardLink}" class="btn btn-primary"
+            >${feature.cardButton}</a
+          >
+        </div>
+      </div>
+      `);
+    });
+  });
+});
 // AJAX Method in JQuery to display Course Cards on Search Page
 $(document).ready(function () {
   $.ajax({
@@ -127,24 +152,24 @@ $(document).ready(function () {
     url: "schedule.json",
     dataType: "json",
   }).done(function (data) {
-    // console.log(data);
-    $.map(data, function (schedule, i) {
+    console.log(data.weekly);
+    $.map(data.daily, function (schedule, i) {
       $("#daily-container").append(`
       <div class="row mt-3">
-      <div class="col-3 border pt-3">
-        <p>${schedule.startTime}</p>
-        <hr />
-        <p>${schedule.endTime}</p>
-      </div>
-      <div class="col-9 border pt-3">
-        <h6>${schedule.moduleName}</h6>
-        <p>
-          Room No. ${schedule.moduleRoom} | ${schedule.moduleLocation} <br />
-          ${schedule.courseID} | ${schedule.courseName} <br />
-          ${schedule.moduleDuration} hours | ${schedule.moduleStudents} Students
-        </p>
-      </div>
-    </div>
+       <div class="col-4 border pt-3">
+         <p>${schedule.startTime}</p>
+         <hr />
+         <p>${schedule.endTime}</p>
+       </div>
+       <div class="col-8 border pt-3">
+         <h6>${schedule.moduleName}</h6>
+         <p>
+           Room No. ${schedule.moduleRoom} | ${schedule.moduleLocation} <br />
+           ${schedule.courseID} | ${schedule.courseName} <br />
+           ${schedule.moduleDuration} hours | ${schedule.moduleStudents} Students
+         </p>
+       </div>
+     </div>
       `);
     });
   });
