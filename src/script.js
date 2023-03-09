@@ -152,7 +152,7 @@ $(document).ready(function () {
     url: "schedule.json",
     dataType: "json",
   }).done(function (data) {
-    console.log(data.weekly);
+    // console.log(data.weekly);
     $.map(data.daily, function (schedule, i) {
       $("#daily-container").append(`
       <div class="row mt-3">
@@ -170,6 +170,25 @@ $(document).ready(function () {
          </p>
        </div>
      </div>
+      `);
+    });
+
+    // weekly data - monday
+    const mondaySchedule = data.weekly[0].monday;
+    console.log(mondaySchedule);
+    $.map(mondaySchedule, function (schedule, i) {
+      $("#monday").append(`
+      <div class="row shadow-sm pt-2 my-3">
+      <div class="col-3">
+        <p>${schedule.startTime}</p>
+      </div>
+      <div class="col-9">
+        <h6>${schedule.moduleName}</h6>
+        <p>
+          <i class="fa fa-location-dot me-1"></i> Room ${schedule.moduleRoom} - ${schedule.moduleLocation}
+        </p>
+      </div>
+    </div>
       `);
     });
   });
