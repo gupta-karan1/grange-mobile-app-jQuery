@@ -175,7 +175,7 @@ $(document).ready(function () {
 
     // weekly data - monday
     const mondaySchedule = data.weekly[0].monday;
-    console.log(mondaySchedule);
+    // console.log(mondaySchedule);
     $.map(mondaySchedule, function (schedule, i) {
       $("#monday").append(`
       <div class="row shadow-sm pt-2 my-3">
@@ -189,6 +189,197 @@ $(document).ready(function () {
         </p>
       </div>
     </div>
+      `);
+    });
+
+    // weekly data - tuesday
+    const tuesdaySchedule = data.weekly[1].tuesday;
+    // console.log(tuesdaySchedule);
+    $.map(tuesdaySchedule, function (schedule, i) {
+      $("#tuesday").append(`
+      <div class="row shadow-sm pt-2 my-3">
+      <div class="col-3">
+        <p>${schedule.startTime}</p>
+      </div>
+      <div class="col-9">
+        <h6>${schedule.moduleName}</h6>
+        <p>
+          <i class="fa fa-location-dot me-1"></i> Room ${schedule.moduleRoom} - ${schedule.moduleLocation}
+        </p>
+      </div>
+    </div>
+      `);
+    });
+
+    // weekly data - wednesday
+    const wednesdaySchedule = data.weekly[2].wednesday;
+    // console.log(wednesdaySchedule);
+    $.map(wednesdaySchedule, function (schedule, i) {
+      $("#wednesday").append(`
+      <div class="row shadow-sm pt-2 my-3">
+      <div class="col-3">
+        <p>${schedule.startTime}</p>
+      </div>
+      <div class="col-9">
+        <h6>${schedule.moduleName}</h6>
+        <p>
+          <i class="fa fa-location-dot me-1"></i> Room ${schedule.moduleRoom} - ${schedule.moduleLocation}
+        </p>
+      </div>
+    </div>
+      `);
+    });
+
+    // weekly data - thursday
+    const thursdaySchedule = data.weekly[3].thursday;
+    // console.log(thursdaySchedule);
+    $.map(thursdaySchedule, function (schedule, i) {
+      $("#thursday").append(`
+      <div class="row shadow-sm pt-2 my-3">
+      <div class="col-3">
+        <p>${schedule.startTime}</p>
+      </div>
+      <div class="col-9">
+        <h6>${schedule.moduleName}</h6>
+        <p>
+          <i class="fa fa-location-dot me-1"></i> Room ${schedule.moduleRoom} - ${schedule.moduleLocation}
+        </p>
+      </div>
+    </div>
+      `);
+    });
+
+    // weekly data - friday
+    const fridaySchedule = data.weekly[4].friday;
+    // console.log(fridaySchedule);
+    $.map(fridaySchedule, function (schedule, i) {
+      $("#friday").append(`
+      <div class="row shadow-sm pt-2 my-3">
+      <div class="col-3">
+        <p>${schedule.startTime}</p>
+      </div>
+      <div class="col-9">
+        <h6>${schedule.moduleName}</h6>
+        <p>
+          <i class="fa fa-location-dot me-1"></i> Room ${schedule.moduleRoom} - ${schedule.moduleLocation}
+        </p>
+      </div>
+    </div>
+      `);
+    });
+
+    // monthly data - week 1
+    const week1Month = data.monthly[0].week1;
+    // console.log(week1Month);
+    $.map(week1Month, function (schedule, i) {
+      $("#week1").append(`
+      <li class="list-group-item align-items-center">
+        <div class="row">
+          <div class="col-3">${schedule.moduleDay}</div>
+          <div class="col-7">
+            ${schedule.moduleName}
+          </div>
+          <div class="col-2">
+            <span class="badge bg-primary rounded-pill">${schedule.moduleDuration}</span>
+          </div>
+        </div>
+      </li>
+      `);
+    });
+
+    // monthly data - week 2
+    const week2Month = data.monthly[1].week2;
+    // console.log(week2Month);
+    $.map(week2Month, function (schedule, i) {
+      $("#week2").append(`
+      <li class="list-group-item align-items-center">
+        <div class="row">
+          <div class="col-3">${schedule.moduleDay}</div>
+          <div class="col-7">
+            ${schedule.moduleName}
+          </div>
+          <div class="col-2">
+            <span class="badge bg-primary rounded-pill">${schedule.moduleDuration}</span>
+          </div>
+        </div>
+      </li>
+      `);
+    });
+
+    // monthly data - week 3
+    const week3Month = data.monthly[2].week3;
+    // console.log(week3Month);
+    $.map(week3Month, function (schedule, i) {
+      $("#week3").append(`
+      <li class="list-group-item align-items-center">
+        <div class="row">
+          <div class="col-3">${schedule.moduleDay}</div>
+          <div class="col-7">
+            ${schedule.moduleName}
+          </div>
+          <div class="col-2">
+            <span class="badge bg-primary rounded-pill">${schedule.moduleDuration}</span>
+          </div>
+        </div>
+      </li>
+      `);
+    });
+
+    // monthly data - week 4
+    const week4Month = data.monthly[3].week4;
+    // console.log(week4Month);
+    $.map(week4Month, function (schedule, i) {
+      $("#week4").append(`
+      <li class="list-group-item align-items-center">
+        <div class="row">
+          <div class="col-3">${schedule.moduleDay}</div>
+          <div class="col-7">
+            ${schedule.moduleName}
+          </div>
+          <div class="col-2">
+            <span class="badge bg-primary rounded-pill">${schedule.moduleDuration}</span>
+          </div>
+        </div>
+      </li>
+      `);
+    });
+
+    // monthly data - week 5
+    const week5Month = data.monthly[4].week5;
+    // console.log(week5Month);
+    $.map(week5Month, function (schedule, i) {
+      $("#week5").append(`
+      <li class="list-group-item align-items-center">
+        <div class="row">
+          <div class="col-3">${schedule.moduleDay}</div>
+          <div class="col-7">
+            ${schedule.moduleName}
+          </div>
+          <div class="col-2">
+            <span class="badge bg-primary rounded-pill">${schedule.moduleDuration}</span>
+          </div>
+        </div>
+      </li>
+      `);
+    });
+  });
+});
+
+// Insert student list on classroom page
+$(document).ready(function () {
+  $.ajax({
+    method: "GET",
+    url: "students.json",
+    dataType: "json",
+  }).done(function (data) {
+    // console.log(data);
+    $.map(data, function (student, i) {
+      $("#student-list").append(`
+      <li class="list-group-item">
+        ${student.name} <br />
+        &nbsp; &nbsp;
+        <a href="mailto:${student.email}">${student.email}</a>
+      </li>
       `);
     });
   });

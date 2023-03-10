@@ -205,6 +205,7 @@
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
+                    "moduleDay":"Mon",
                     "moduleDuration": 1,
                     "moduleStudents": 30
                 },
@@ -218,6 +219,7 @@
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
+                    "moduleDay":"Mon",
                     "moduleDuration": 1,
                     "moduleStudents": 30
                 }
@@ -235,6 +237,7 @@
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
+                    "moduleDay":"Mon",
                     "moduleDuration": 1,
                     "moduleStudents": 30
                 },
@@ -248,6 +251,7 @@
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
+                    "moduleDay":"Tue",
                     "moduleDuration": 1,
                     "moduleStudents": 30
                 }
@@ -265,6 +269,7 @@
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
+                    "moduleDay":"Mon",
                     "moduleDuration": 1,
                     "moduleStudents": 30
                 },
@@ -278,6 +283,7 @@
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
+                    "moduleDay":"Tue",
                     "moduleDuration": 1,
                     "moduleStudents": 30
                 }
@@ -295,6 +301,7 @@
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
+                    "moduleDay":"Mon",
                     "moduleDuration": 1,
                     "moduleStudents": 30
                 },
@@ -307,6 +314,7 @@
                     "startTime":"4:00 PM",
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
+                    "moduleDay":"Mon",
                     "courseName":"CDM & UX",
                     "moduleDuration": 1,
                     "moduleStudents": 30
@@ -324,6 +332,7 @@
                     "startTime":"4:00 PM",
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
+                    "moduleDay":"Mon",
                     "courseName":"CDM & UX",
                     "moduleDuration": 1,
                     "moduleStudents": 30
@@ -337,6 +346,7 @@
                     "startTime":"4:00 PM",
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
+                    "moduleDay":"Mon",
                     "courseName":"CDM & UX",
                     "moduleDuration": 1,
                     "moduleStudents": 30

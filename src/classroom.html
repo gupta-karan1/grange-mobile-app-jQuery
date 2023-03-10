@@ -89,37 +89,55 @@
           </ol>
         </nav>
         <h6 class="text-left">Welcome to Your Classroom</h6>
+        <p class="text-left">
+          This is your classroom. Here you can view your students, their
+          attendance, and their grades.
+        </p>
+
+        <!-- View Students Button -->
         <button
           type="button"
-          class="btn btn-outline-primary btn-sm"
-          data-bs-toggle="collapse"
-          data-bs-target="#students"
+          class="btn btn-outline-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#studentModal"
         >
-          View Students &nbsp; <span class="badge bg-danger">5</span>
+          View Students
         </button>
-        <div id="students" class="collapse mt-2">
-          <ol class="list-group list-group-numbered">
-            <li class="list-group-item">
-              Karan Gupta <br />
-              &nbsp; &nbsp;
-              <a href="mailto:D22124440@mytublin.ie"> D22124440@mytublin.ie</a>
-            </li>
-            <li class="list-group-item">
-              John Doe <br />
-              &nbsp; &nbsp;
-              <a href="mailto:D22124440@mytublin.ie"> D22124440@mytublin.ie</a>
-            </li>
-            <li class="list-group-item">
-              Jane Dane <br />
-              &nbsp; &nbsp;
-              <a href="mailto:D22124440@mytublin.ie"> D22124440@mytublin.ie</a>
-            </li>
-            <li class="list-group-item">
-              <a class="btn btn-success btn-sm" href="#" role="button">
-                Add Student
-              </a>
-            </li>
-          </ol>
+
+        <!-- View Students Modal -->
+        <div class="modal" id="studentModal">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Your Students</h4>
+
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <ol class="list-group list-group-numbered" id="student-list">
+                  <!-- Inserted from students JSON file -->
+                </ol>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
