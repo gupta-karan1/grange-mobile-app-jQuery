@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "messageTitle": "Changes to Assignment 1",
+        "messageBody": "Class, I have updated the brief for assignment 1 to clarify  a few aspects. For those that do not know, the final assignment is available too. I will have a video of the scenario and use case lecture up on Monday. Have a good weekend, Brian",
+        "messageDate": "24 February 2023",
+        "messageTime": "5:23 PM"
+    },
+
+    {
+        "id": 2,
+        "messageTitle": "Lecture 3 Video",
+        "messageBody": "Class,the video for lecture 3 on user stat gathering techniques is up under the lecture 3 content section I will also remind you all that Thursday's class is a workshop on paper prototyping. We will paper prototype your early concepts for your final projects. Kind regards, Brian",
+        "messageDate": "20 February 2023",
+        "messageTime": " 12:58 PM"
+    },
+
+    {
+        "id": 3,
+        "messageTitle": "Overview lecture",
+        "messageBody": "Class, Tomorrows overview lecture will be a video going through the main the points of all the lectures, so there will be no 'live' online lecture. If any student wants to discuss any of the course material, or the final assignment, just email me and we will arrange a meeting. Brian",
+        "messageDate": "03 May 2021",
+        "messageTime": "8:40 PM"
+    },
+
+    {
+        "id": 4,
+        "messageTitle": "Scenarios Lecture",
+        "messageBody": "Class, Some of you might have difficulty accessing the scenarios lecture I uploaded. I have created a Scenarios Lecture in the content section with a ZIP file of the lecture.",
+        "messageDate": "22 March 2021",
+        "messageTime": "12:46 PM"
+    },
+
+    {
+        "id": 5,
+        "messageTitle": "Module survey",
+        "messageBody": "Dear class,  As part of the ongoing Q&A procedure, we ask students to fill out a survey at the end of each module. This is known as a Q6 survey. It is a University wide survey so some of the questions are fairly broad and may not apply directly to this module. Just answer them as best you can or leave blank if they are not relevant. Please do take the time to complete it as we do take the feedback onboard and make changes for future classes based on your feedback.",
+        "messageDate": "24 February 2023",
+        "messageTime": "5:23 PM"
+    }
+
+]

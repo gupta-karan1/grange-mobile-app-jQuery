@@ -337,7 +337,7 @@ $(document).ready(function () {
   });
 });
 
-// Insert student list on classroom page
+// Insert student list on classroom page using AJAX Call
 $(document).ready(function () {
   $.getJSON("students.json", function (data) {
     //  console.log(data);
@@ -350,5 +350,33 @@ $(document).ready(function () {
        </li>
       `);
     });
+  });
+});
+
+// slide toggle function in JQUERY to toggle subtitle on classroom page
+$(document).ready(function () {
+  $("#welcomeClass").click(function (e) {
+    e.preventDefault();
+    $("#welcomeMsg").slideToggle().removeClass("d-none");
+  });
+});
+
+// Update the options list with student emails on 'Send New Message' Form on the Classroom Page
+$(document).ready(function () {
+  $.getJSON("students.json", function (data) {
+    // console.log(data);
+    $.each(data, function (i, student) {
+      $("#class-ppl").append(`
+      <option value="${student.email}">${student.email}</option>
+      `);
+    });
+  });
+});
+
+// display the messages on classroom page from messages JSON
+$(document).ready(function () {
+  $.getJSON("messages.json", function (data) {
+    // console.log(data);
+    $.each(data);
   });
 });

@@ -88,55 +88,240 @@
             </li>
           </ol>
         </nav>
-        <h6 class="text-left">Welcome to Your Classroom</h6>
-        <p class="text-left">
-          This is your classroom. Here you can view your students, their
-          attendance, and their grades.
+        <h4 class="text-left" id="welcomeClass">
+          Your Classroom <i id="arrow" class="fa fa-caret-down"></i>
+        </h4>
+        <p class="text-left d-none" id="welcomeMsg">
+          Here you can view your students, add students to your list, contact
+          them individually, send them group emails and view the previously sent
+          messages.
         </p>
-
         <!-- View Students Button -->
         <button
           type="button"
-          class="btn btn-outline-primary"
+          class="btn btn-outline-primary my-2"
           data-bs-toggle="modal"
           data-bs-target="#studentModal"
+          id="viewStudents"
         >
           View Students
         </button>
+      </div>
 
-        <!-- View Students Modal -->
-        <div class="modal" id="studentModal">
-          <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">Your Students</h4>
+      <!-- View Students Modal -->
+      <div class="modal" id="studentModal">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Your Students</h4>
 
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                ></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body">
-                <ol class="list-group list-group-numbered" id="student-list">
-                  <!-- Inserted from students JSON file -->
-                </ol>
-              </div>
-
-              <!-- Modal footer -->
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-danger"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
             </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered" id="student-list">
+                <!-- Inserted from students JSON file -->
+              </ol>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-success me-3"
+                data-bs-toggle="modal"
+                data-bs-target="#addStudent"
+              >
+                Add Student
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add student modal form with proper form validation-->
+      <div class="modal" id="addStudent">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- modal header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Add Student</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <!-- modal body -->
+            <div class="modal-body">
+              <!-- add student form -->
+              <!-- create an onsubmit function that enters this information to the student list -->
+              <form class="was-validated">
+                <div class="mb-3 mt-3">
+                  <label for="uname" class="form-label">Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="uname"
+                    placeholder="Enter username"
+                    name="uname"
+                    required
+                  />
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter Email"
+                    name="e-mail"
+                    required
+                  />
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please enter a valid email.
+                  </div>
+                </div>
+                <div class="form-check mb-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="myCheck"
+                    name="remember"
+                    required
+                  />
+                  <label class="form-check-label" for="myCheck"
+                    >I agree on Privacy Policy.</label
+                  >
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Check this checkbox to continue.
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+              </form>
+            </div>
+            <!-- modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- View a list of messages sent to students -->
+      <div class="container position-sticky sticky-top bg-white p-3">
+        <h3 class="d-inline">Messages</h3>
+        <button
+          type="button"
+          class="btn btn-primary float-end d-inline-block"
+          data-bs-toggle="modal"
+          data-bs-target="#messageStudents"
+          id="messageAll"
+        >
+          Send New Message
+        </button>
+      </div>
+
+      <div class="modal" id="messageStudents">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+          <div class="modal-content">
+            <!-- modal header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Send New Message</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <!-- modal body -->
+            <div class="modal-body">
+              <!-- new message form -->
+              <form action="" class="was-validated">
+                <div class="mb-3 mt-3">
+                  <label for="newMsg" class="form-label"> Your Message: </label>
+                  <textarea
+                    name="message"
+                    id="newMsg"
+                    rows="5"
+                    class="form-control"
+                    required
+                    placeholder="Dear Class, "
+                  ></textarea>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="class-ppl" class="form-label"
+                    >Select Recipient (select one):</label
+                  >
+                  <select class="form-select" id="class-ppl" name="class-list">
+                    <!-- Student Email List Updated from students JSON file -->
+                  </select>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please select an option</div>
+                  <a href="mailto:" class="btn btn-success float-end">
+                    Send Message
+                  </a>
+                </div>
+              </form>
+            </div>
+            <!-- modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card my-3">
+          <div class="card-header"><h5>Changes to Assignment 1</h5></div>
+          <div class="card-body">
+            <p>
+              Class, I have updated the brief for assignment 1 to clarify a few
+              aspects. For those that do not know, the final assignment is
+              available too. I will have a video of the scenario and use case
+              lecture up on Monday. I want to thank the class for continuing
+              wearing masks in class, I do appreciate it, so thank you. Have a
+              good weekend, Brian
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>24 February 2023 5:23 PM</p>
           </div>
         </div>
       </div>
