@@ -1,32 +1,3 @@
-/*
-// GET JSON Method with JQuery to display Course Cards on Search Page
-$(document).ready(function () {
-  $.getJSON("courses.json", function (data) {
-    $.each(data, function (i, course) {
-      $("#course-cards").append(`
-              <div class="card my-4">
-              <div class="card-body">
-                <h4 class="card-title my-2">${course.courseName}</h4>
-                <h6 class="card-subtitle my-2">${course.courseId}</h6>
-                <p class="card-text my-2">
-                  ${course.courseStage} | ${course.courseDuration} | ${course.courseType} | ${course.courseLevel} | ${course.courseLocation}
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#myModal"
-                >
-                  View Modules
-                </button>
-              </div>
-            </div>
-              `);
-    });
-  });
-});
-*/
-
 // AJAX Call to display feature cards on Home Page
 $(document).ready(function () {
   $.getJSON("features.json", function (data) {
@@ -52,6 +23,7 @@ $(document).ready(function () {
     });
   });
 });
+
 // AJAX Method in JQuery to display Course Cards on Search Page
 $(document).ready(function () {
   $.ajax({
@@ -367,19 +339,15 @@ $(document).ready(function () {
 
 // Insert student list on classroom page
 $(document).ready(function () {
-  $.ajax({
-    method: "GET",
-    url: "students.json",
-    dataType: "json",
-  }).done(function (data) {
-    // console.log(data);
-    $.map(data, function (student, i) {
+  $.getJSON("students.json", function (data) {
+    //  console.log(data);
+    $.each(data, function (i, student) {
       $("#student-list").append(`
       <li class="list-group-item">
         ${student.name} <br />
-        &nbsp; &nbsp;
-        <a href="mailto:${student.email}">${student.email}</a>
-      </li>
+         &nbsp; &nbsp;
+         <a href="mailto:${student.email}">${student.email}</a>
+       </li>
       `);
     });
   });
