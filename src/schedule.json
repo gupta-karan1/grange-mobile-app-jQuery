@@ -14,11 +14,11 @@
             "moduleStudents": 20
         },
         {
-            "id": 1,
-            "moduleName":"Social Media Applications",
-            "moduleId":"MED9027",
-            "moduleRoom": "206",
-            "moduleLocation":"Grangegorman",
+            "id": 2,
+            "moduleName":"Authoring Principles",
+            "moduleId":"MED9035",
+            "moduleRoom": "301",
+            "moduleLocation":"Aungier Street",
             "startTime":"01:00 PM",
             "endTime":"03:00 PM",
             "courseID":"TU294",
@@ -27,15 +27,15 @@
             "moduleStudents": 12
         },
         {
-            "id": 1,
-            "moduleName":"Social Media Applications",
-            "moduleId":"MED9027",
+            "id": 3,
+            "moduleName":"Introduction to Web Design",
+            "moduleId":"MED9036",
             "moduleRoom": "206",
-            "moduleLocation":"Grangegorman",
+            "moduleLocation":"Bolton Street",
             "startTime":"4:00 PM",
             "endTime":"5:00 PM",
-            "courseID":"TU294",
-            "courseName":"CDM & UX",
+            "courseID":"TU267",
+            "courseName":"Web Design",
             "moduleDuration": 1,
             "moduleStudents": 30
         }
@@ -49,7 +49,7 @@
                     "moduleId":"MED9027",
                     "moduleRoom": "206",
                     "moduleLocation":"Grangegorman",
-                    "startTime":"4:00 PM",
+                    "startTime":"1:00 PM",
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
@@ -57,15 +57,15 @@
                     "moduleStudents": 30
                 },
                 {
-                    "id": 1,
-                    "moduleName":"Social Media Applications",
-                    "moduleId":"MED9027",
-                    "moduleRoom": "206",
-                    "moduleLocation":"Grangegorman",
+                    "id": 2,
+                    "moduleName":"Introduction to Web Design",
+                    "moduleId":"MED9036",
+                    "moduleRoom": "306",
+                    "moduleLocation":"Bolton Street",
                     "startTime":"4:00 PM",
                     "endTime":"5:00 PM",
-                    "courseID":"TU294",
-                    "courseName":"CDM & UX",
+                    "courseID":"TU267",
+                    "courseName":"Web Design",
                     "moduleDuration": 1,
                     "moduleStudents": 30
                 }
@@ -79,7 +79,7 @@
                     "moduleId":"MED9027",
                     "moduleRoom": "206",
                     "moduleLocation":"Grangegorman",
-                    "startTime":"4:00 PM",
+                    "startTime":"1:00 PM",
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
@@ -87,15 +87,15 @@
                     "moduleStudents": 30
                 },
                 {
-                    "id": 1,
-                    "moduleName":"Social Media Applications",
-                    "moduleId":"MED9027",
-                    "moduleRoom": "206",
-                    "moduleLocation":"Grangegorman",
+                    "id": 2,
+                    "moduleName":"Introduction to Web Design",
+                    "moduleId":"MED9036",
+                    "moduleRoom": "306",
+                    "moduleLocation":"Bolton Street",
                     "startTime":"4:00 PM",
                     "endTime":"5:00 PM",
-                    "courseID":"TU294",
-                    "courseName":"CDM & UX",
+                    "courseID":"TU267",
+                    "courseName":"Web Design",
                     "moduleDuration": 1,
                     "moduleStudents": 30
                 }
@@ -109,7 +109,7 @@
                     "moduleId":"MED9027",
                     "moduleRoom": "206",
                     "moduleLocation":"Grangegorman",
-                    "startTime":"4:00 PM",
+                    "startTime":"1:00 PM",
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
@@ -117,15 +117,15 @@
                     "moduleStudents": 30
                 },
                 {
-                    "id": 1,
-                    "moduleName":"Social Media Applications",
-                    "moduleId":"MED9027",
-                    "moduleRoom": "206",
-                    "moduleLocation":"Grangegorman",
+                    "id": 2,
+                    "moduleName":"Introduction to Web Design",
+                    "moduleId":"MED9036",
+                    "moduleRoom": "306",
+                    "moduleLocation":"Bolton Street",
                     "startTime":"4:00 PM",
                     "endTime":"5:00 PM",
-                    "courseID":"TU294",
-                    "courseName":"CDM & UX",
+                    "courseID":"TU267",
+                    "courseName":"Web Design",
                     "moduleDuration": 1,
                     "moduleStudents": 30
                 }
@@ -139,7 +139,7 @@
                     "moduleId":"MED9027",
                     "moduleRoom": "206",
                     "moduleLocation":"Grangegorman",
-                    "startTime":"4:00 PM",
+                    "startTime":"1:00 PM",
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
@@ -147,15 +147,15 @@
                     "moduleStudents": 30
                 },
                 {
-                    "id": 1,
-                    "moduleName":"Social Media Applications",
-                    "moduleId":"MED9027",
-                    "moduleRoom": "206",
-                    "moduleLocation":"Grangegorman",
+                    "id": 2,
+                    "moduleName":"Introduction to Web Design",
+                    "moduleId":"MED9036",
+                    "moduleRoom": "306",
+                    "moduleLocation":"Bolton Street",
                     "startTime":"4:00 PM",
                     "endTime":"5:00 PM",
-                    "courseID":"TU294",
-                    "courseName":"CDM & UX",
+                    "courseID":"TU267",
+                    "courseName":"Web Design",
                     "moduleDuration": 1,
                     "moduleStudents": 30
                 }
@@ -169,7 +169,7 @@
                     "moduleId":"MED9027",
                     "moduleRoom": "206",
                     "moduleLocation":"Grangegorman",
-                    "startTime":"4:00 PM",
+                    "startTime":"1:00 PM",
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
@@ -177,15 +177,15 @@
                     "moduleStudents": 30
                 },
                 {
-                    "id": 1,
-                    "moduleName":"Social Media Applications",
-                    "moduleId":"MED9027",
-                    "moduleRoom": "206",
-                    "moduleLocation":"Grangegorman",
+                    "id": 2,
+                    "moduleName":"Introduction to Web Design",
+                    "moduleId":"MED9036",
+                    "moduleRoom": "306",
+                    "moduleLocation":"Bolton Street",
                     "startTime":"4:00 PM",
                     "endTime":"5:00 PM",
-                    "courseID":"TU294",
-                    "courseName":"CDM & UX",
+                    "courseID":"TU267",
+                    "courseName":"Web Design",
                     "moduleDuration": 1,
                     "moduleStudents": 30
                 }
@@ -197,20 +197,20 @@
             "week1":[
                 {
                     "id": 1,
-                    "moduleName":"Social Media Applications",
-                    "moduleId":"MED9027",
-                    "moduleRoom": "206",
-                    "moduleLocation":"Grangegorman",
-                    "startTime":"4:00 PM",
-                    "endTime":"5:00 PM",
+                    "moduleName":"Authoring Principles",
+                    "moduleId":"MED9028",
+                    "moduleRoom": "301",
+                    "moduleLocation":"Tallaght",
+                    "startTime":"2:00 PM",
+                    "endTime":"4:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
                     "moduleDay":"Mon",
-                    "moduleDuration": 1,
+                    "moduleDuration": 2,
                     "moduleStudents": 30
                 },
                 {
-                    "id": 1,
+                    "id": 2,
                     "moduleName":"Social Media Applications",
                     "moduleId":"MED9027",
                     "moduleRoom": "206",
@@ -219,9 +219,9 @@
                     "endTime":"5:00 PM",
                     "courseID":"TU294",
                     "courseName":"CDM & UX",
-                    "moduleDay":"Mon",
+                    "moduleDay":"Tue",
                     "moduleDuration": 1,
-                    "moduleStudents": 30
+                    "moduleStudents": 20
                 }
             ]
         },

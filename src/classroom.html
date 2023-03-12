@@ -263,7 +263,24 @@
             <div class="modal-body">
               <!-- new message form -->
               <form action="" class="was-validated">
-                <div class="mb-3 mt-3">
+                <div class="my-2">
+                  <label for="newMsgTitle" class="form-label">
+                    Message Title:
+                  </label>
+                  <textarea
+                    name="message"
+                    id="newMsgTitle"
+                    rows="1"
+                    class="form-control"
+                    required
+                    placeholder="Class Update..."
+                  ></textarea>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+                <div class="my-2">
                   <label for="newMsg" class="form-label"> Your Message: </label>
                   <textarea
                     name="message"
@@ -278,7 +295,7 @@
                     Please fill out this field.
                   </div>
                 </div>
-                <div class="mb-3">
+                <div class="my-2">
                   <label for="class-ppl" class="form-label"
                     >Select Recipient (select one):</label
                   >
@@ -287,9 +304,9 @@
                   </select>
                   <div class="valid-feedback">Valid.</div>
                   <div class="invalid-feedback">Please select an option</div>
-                  <a href="mailto:" class="btn btn-success float-end">
+                  <button type="submit" class="btn btn-success float-end">
                     Send Message
-                  </a>
+                  </button>
                 </div>
               </form>
             </div>
@@ -307,24 +324,16 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="card my-3">
-          <div class="card-header"><h5>Changes to Assignment 1</h5></div>
-          <div class="card-body">
-            <p>
-              Class, I have updated the brief for assignment 1 to clarify a few
-              aspects. For those that do not know, the final assignment is
-              available too. I will have a video of the scenario and use case
-              lecture up on Monday. I want to thank the class for continuing
-              wearing masks in class, I do appreciate it, so thank you. Have a
-              good weekend, Brian
-            </p>
-          </div>
-          <div class="card-footer">
-            <p>24 February 2023 5:23 PM</p>
-          </div>
-        </div>
+      <div class="container" id="message-cards">
+        <!-- inserted from messages JSON file -->
       </div>
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
     </main>
     <footer>
       <nav class="navbar fixed-bottom bg-dark-subtle">

@@ -2,7 +2,7 @@
     {
         "id": "1",
         "img": "assets/imgs/home-search.jpg",
-        "cardTitle": "Search For Courses & Modules",
+        "cardTitle": "Search Courses & Modules",
         "cardText":"Search for courses and modules from the university catalogue. View their details and add them to your timetable.",
         "cardButton": "Search Courses",
         "cardLink": "search.html"

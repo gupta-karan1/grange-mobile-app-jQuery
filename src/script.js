@@ -44,7 +44,7 @@ $(document).ready(function () {
               </p>
               <button
                 type="button"
-                class="btn btn-primary"
+                class="btn btn-primary float-end"
                 data-bs-toggle="modal"
                 data-bs-target="#myModal"
               >
@@ -118,6 +118,7 @@ $(document).ready(function () {
   });
 });
 
+// Display daily schedule on schedule page
 $(document).ready(function () {
   $.ajax({
     method: "GET",
@@ -136,8 +137,8 @@ $(document).ready(function () {
        <div class="col-8 border pt-3">
          <h6>${schedule.moduleName}</h6>
          <p>
-           Room No. ${schedule.moduleRoom} | ${schedule.moduleLocation} <br />
-           ${schedule.courseID} | ${schedule.courseName} <br />
+           Room No. ${schedule.moduleRoom} | ${schedule.moduleLocation} |
+           ${schedule.courseID} | ${schedule.courseName} |
            ${schedule.moduleDuration} hours | ${schedule.moduleStudents} Students
          </p>
        </div>
@@ -377,6 +378,20 @@ $(document).ready(function () {
 $(document).ready(function () {
   $.getJSON("messages.json", function (data) {
     // console.log(data);
-    $.each(data);
+    $.each(data, function (i, message) {
+      $("#message-cards").append(`
+      <div class="card my-3">
+          <div class="card-header"><h5>${message.messageTitle}</h5></div>
+          <div class="card-body">
+            <p>
+              ${message.messageBody}
+            </p>
+          </div>
+          <div class="card-footer">
+            <p>${message.messageDate}  ${message.messageTime}</p>
+          </div>
+        </div>
+      `);
+    });
   });
 });
