@@ -102,14 +102,6 @@ $(document).ready(function () {
                             Lecturer: <b>${modules.moduleLecturer}</b>
                         </li>
                     </ul>
-                    <a
-                    class="btn btn-success btn-sm my-2"
-                    href="#"
-                    id="${modules.moduleID}"
-                    role="button"
-                    >
-                    Add to Schedule
-                    </a>
                 </div>
             </div>
       </div>
@@ -354,6 +346,42 @@ $(document).ready(function () {
   });
 });
 
+// function to submit the Add Student Form information into the students.json file
+
+$(document).ready(function () {
+  // on submit event of the form
+  // get the data from the form
+  $("#add-student").submit(function (e) {
+    e.preventDefault();
+    const name = $("#uname").val();
+    const email = $("#email").val();
+    const student = {
+      name: name,
+      email: email,
+    };
+    // console.log(student);
+    // add this student data from form to local storage
+    localStorage.setItem("student", JSON.stringify(student));
+    // console.log(localStorage.getItem("student"));
+    alert("Student Added Successfully to Your Students List");
+    // access this data from local storage and parse it
+    const studentData = JSON.parse(localStorage.getItem("student"));
+    // console.log(studentData);
+    $("#student-list").append(`
+        <li class="list-group-item">
+          ${studentData.name} <br />
+            &nbsp; &nbsp;
+            <a href="mailto:${studentData.email}">${studentData.email}</a>
+        </li>
+      `);
+
+    // add this student data to the select option list on the 'Send New Message' Form on the Classroom Page
+    $("#class-ppl").append(`
+      <option value="${studentData.email}">${studentData.email}</option>
+    `);
+  });
+});
+
 // slide toggle function in JQUERY to toggle subtitle on classroom page
 $(document).ready(function () {
   $("#welcomeClass").click(function (e) {
@@ -381,7 +409,10 @@ $(document).ready(function () {
     $.each(data, function (i, message) {
       $("#message-cards").append(`
       <div class="card my-3">
-          <div class="card-header"><h5>${message.messageTitle}</h5></div>
+          <div class="card-header">
+            <h5>${message.messageTitle}</h5>
+            <p>To: ${message.messageRecipient}</p>
+          </div>
           <div class="card-body">
             <p>
               ${message.messageBody}
@@ -393,5 +424,58 @@ $(document).ready(function () {
         </div>
       `);
     });
+  });
+});
+
+// function to submit the 'Send New Message' Form information into the messages.json file
+$(document).ready(function () {
+  // on submit event of the form
+  // get the data from the form
+  $("#send-message").submit(function (e) {
+    e.preventDefault();
+    const messageTitle = $("#msg-title").val();
+    const messageBody = $("#msg-body").val();
+    const messageRecipient = $("#class-ppl").val();
+    // create date and time variables using in built date method
+    const messageDate = new Date().toLocaleDateString();
+    const messageTime = new Date().toLocaleTimeString();
+    // console.log(messageDate);
+    // console.log(messageTime);
+    const message = {
+      messageTitle: messageTitle,
+      messageBody: messageBody,
+      messageDate: messageDate,
+      messageTime: messageTime,
+      messageRecipient: messageRecipient,
+    };
+    // console.log(message);
+    // add this message data from form to local storage
+    localStorage.setItem("message", JSON.stringify(message));
+    // console.log(localStorage.getItem("message"));
+    alert("Message Sent Successfully");
+    // clear the form fields after submit
+    $("#msg-title").val("");
+    $("#msg-body").val("");
+
+    // display the message on classroom page
+    // access this data from local storage and parse it
+    const messageData = JSON.parse(localStorage.getItem("message"));
+    console.log(messageData);
+    $("#message-cards").prepend(`
+    <div class="card my-3">
+        <div class="card-header">
+          <h5>${messageData.messageTitle}</h5>
+          <p>To: ${messageData.messageRecipient}</p>
+        </div>
+        <div class="card-body">
+          <p>
+            ${messageData.messageBody}
+          </p>
+        </div>
+        <div class="card-footer">
+          <p>${messageData.messageDate}  ${messageData.messageTime}</p>
+        </div>
+      </div>
+  `);
   });
 });
