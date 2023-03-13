@@ -364,22 +364,28 @@ $(document).ready(function () {
     localStorage.setItem("student", JSON.stringify(student));
     // console.log(localStorage.getItem("student"));
     alert("Student Added Successfully to Your Students List");
-    // access this data from local storage and parse it
-    const studentData = JSON.parse(localStorage.getItem("student"));
-    // console.log(studentData);
-    $("#student-list").append(`
-        <li class="list-group-item">
-          ${studentData.name} <br />
-            &nbsp; &nbsp;
-            <a href="mailto:${studentData.email}">${studentData.email}</a>
-        </li>
-      `);
-
-    // add this student data to the select option list on the 'Send New Message' Form on the Classroom Page
-    $("#class-ppl").append(`
-      <option value="${studentData.email}">${studentData.email}</option>
-    `);
+    location.reload();
+    // clear the form
+    $("#add-student").trigger("reset");
   });
+});
+
+$(document).ready(function () {
+  // access this data from local storage and parse it
+  const studentData = JSON.parse(localStorage.getItem("student"));
+  // console.log(studentData);
+  $("#student-list").append(`
+       <li class="list-group-item">
+         ${studentData.name} <br />
+           &nbsp; &nbsp;
+           <a href="mailto:${studentData.email}">${studentData.email}</a>
+       </li>
+     `);
+
+  // add this student data to the select option list on the 'Send New Message' Form on the Classroom Page
+  $("#class-ppl").append(`
+     <option value="${studentData.email}">${studentData.email}</option>
+   `);
 });
 
 // slide toggle function in JQUERY to toggle subtitle on classroom page
@@ -453,15 +459,19 @@ $(document).ready(function () {
     localStorage.setItem("message", JSON.stringify(message));
     // console.log(localStorage.getItem("message"));
     alert("Message Sent Successfully");
+    location.reload();
     // clear the form fields after submit
     $("#msg-title").val("");
     $("#msg-body").val("");
+  });
+});
 
-    // display the message on classroom page
-    // access this data from local storage and parse it
-    const messageData = JSON.parse(localStorage.getItem("message"));
-    console.log(messageData);
-    $("#message-cards").prepend(`
+$(document).ready(function () {
+  // display the message on classroom page
+  // access this data from local storage and parse it
+  const messageData = JSON.parse(localStorage.getItem("message"));
+  console.log(messageData);
+  $("#message-cards").prepend(`
     <div class="card my-3">
         <div class="card-header">
           <h5>${messageData.messageTitle}</h5>
@@ -477,5 +487,4 @@ $(document).ready(function () {
         </div>
       </div>
   `);
-  });
 });
