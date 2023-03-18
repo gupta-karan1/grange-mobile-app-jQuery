@@ -24,6 +24,7 @@
   </head>
   <body>
     <header>
+      <!-- Bootstrap Top Nav Bar -->
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
@@ -75,9 +76,11 @@
         </div>
       </nav>
     </header>
+
     <main class="mb-5 pb-5">
       <!-- Introductory Text -->
       <div class="container bg-primary-subtle p-3">
+        <!-- Bootstrap Breadcrumb Component -->
         <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
@@ -88,6 +91,7 @@
             </li>
           </ol>
         </nav>
+
         <h4 class="text-left" id="welcomeClass">
           Your Classroom <i id="arrow" class="fa fa-caret-down"></i>
         </h4>
@@ -96,6 +100,7 @@
           them individually, send them group emails and view the previously sent
           messages.
         </p>
+
         <!-- View Students Button -->
         <button
           type="button"
@@ -169,6 +174,7 @@
             <div class="modal-body">
               <!-- add student form -->
               <!-- create an onsubmit function that enters this information to the student list -->
+              <!-- Bootstrap Form with Form Validation -->
               <form class="was-validated" id="add-student">
                 <div class="mb-3 mt-3">
                   <label for="uname" class="form-label">Name:</label>
@@ -262,6 +268,7 @@
             <!-- modal body -->
             <div class="modal-body">
               <!-- new message form -->
+              <!-- Bootstrap Form with Form Validation -->
               <form id="send-message" class="was-validated">
                 <div class="my-2">
                   <label for="msg-title" class="form-label">
@@ -335,6 +342,8 @@
       <div class="container" id="message-cards">
         <!-- inserted from messages JSON file -->
       </div>
+
+      <!-- Bootstrap Pagination Component -->
       <ul class="pagination justify-content-center">
         <li class="page-item"><a class="page-link" href="#">Previous</a></li>
         <li class="page-item active"><a class="page-link" href="#">1</a></li>
@@ -344,6 +353,7 @@
       </ul>
     </main>
     <footer>
+      <!-- Bootstrap Bottom Nav Bar -->
       <nav class="navbar fixed-bottom bg-dark-subtle">
         <div class="container-fluid justify-content-center">
           <ul class="navbar-nav d-flex flex-row gap-4">
